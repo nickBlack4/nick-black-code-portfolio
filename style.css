@@ -19,7 +19,7 @@ body {
     /* width: 100%; */
     padding: 1em;
     /* adjusting this will adjust height of background image */
-    height: 37em;
+    height: 100%;
   }
 
   footer {
@@ -129,10 +129,34 @@ body {
         position: relative;
     }
 
-    footer {
+    /* footer {
         background: rgba(161, 138, 138, 0.8);
         padding: 0.4em;
         text-shadow: 1px 1px #fff;
+    } */
+
+    .flexContainer img {
+      width: 5em;
+      height: 5em;
+      margin-top: 3em;
+      /* margin-left: 2.3em; */
+      transition: transform 2s;
+      margin-bottom: 2em;
+      margin-left: -.5em;
+       
+    }
+
+    .flexContainer h1 {
+      font-size: 3.7em;
+      text-shadow: 2px 2px 5px rgb(19, 0, 12);
+      color: rgb(235, 217, 217);
+      margin: 0;
+      margin-top: 0.4em;
+      margin-left: 0.4em;
+  
+      /* text-align: center; */
+      /* margin-left: 0.7em; */
+      /* transition: text-shadow 1.5s; */
     }
 
     
