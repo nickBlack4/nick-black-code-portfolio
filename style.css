@@ -89,6 +89,27 @@ body {
     transform: rotateY(165deg);
   }
 
+  .transparentContainerCourseWork {
+    background: rgba(250, 157, 227, 0.9);
+    padding: 2em;
+    border-radius: 1em;
+    border: 1px solid rgb(63, 4, 112);
+    box-shadow: 5px 10px 3px black;
+  }
+
+  /* targets children divs */
+  .transparentContainerCourseWork > div {
+    /* background-color: red; */
+  }
+
+  #parent #popup {
+    display: none;
+  }
+  
+  #parent:hover #popup {
+    display: block;
+  }
+
 
 
 
