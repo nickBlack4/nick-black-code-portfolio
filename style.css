@@ -1,3 +1,10 @@
+/* about me font */
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+* {
+  font-family: 'K2D', sans-serif;
+}
+
 body {
     margin: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,11 +71,12 @@ body {
   } */
 
   .flexContainer h1 {
-    font-size: 6.7em;
+    /* font-size: 6.7em; */
+    font-size: 7em;
     text-shadow: 2px 2px 5px rgb(19, 0, 12);
     color: rgb(235, 217, 217);
     margin: 0;
-    margin-top: 0.4em;
+    margin-top: 0.2em;
 
     /* text-align: center; */
     /* margin-left: 0.7em; */
@@ -100,15 +108,31 @@ body {
   /* targets children divs */
   .transparentContainerCourseWork > div {
     /* background-color: red; */
+    /* text-align: center; */
+    display: flex;
   }
 
-  #parent #popup {
-    display: none;
-  }
-  
-  #parent:hover #popup {
-    display: block;
-  }
+.avatarContainer {
+  background-color: rgb(38, 38, 38);
+  padding: 1em;
+  width: 50%;
+  border-radius: 1em;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.avatarContainer img {
+  width: 25em;
+  height: 25em;
+}
+
+#intro {
+  /* already specified in universal tag */
+  /* font-family: 'K2D', sans-serif; */
+  font-size: 1.5em;
+  padding-right: 1em;
+}
+
 
 
 
