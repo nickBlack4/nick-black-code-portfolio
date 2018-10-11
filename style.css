@@ -220,6 +220,29 @@ button.close:hover {
       padding: 0;
     }
     
+    /* resume */
+    .navigation ul li {
+      display: inline;
+      list-style-type: none;
+      font-size: 1.3em;
+      color: white;
+      text-shadow: 1px 2px 2px #000;
+      margin-right: 1em;
+    }
+
+    /* button above resume for relevant coursework */
+    .modalCourseWork button {
+      background-color: rgb(208, 162, 247);
+      color: black;
+      border: none;
+      border-radius: 0;
+      border-radius: 10px 10px 0px 0;
+      text-shadow: 1px 0px 2px #fff;
+      width: 100%;
+      font-size: 0.8em;
+    }
+   
+
     .hero-image {
         background-image: url("./images/background.jpg");
         background-color: #000;
@@ -235,10 +258,9 @@ button.close:hover {
         text-shadow: 1px 1px #fff;
     } */
   
-
     .transparentContainerCourseWork {
-      width: 80%;
-      display: block;
+      /* width: 100%; */
+      /* display: block; */
       /* flex-wrap: wrap; */
     }
      /* targets children divs */
@@ -246,7 +268,13 @@ button.close:hover {
     /* background-color: red; */
     /* text-align: center; */
     display: block;
+  }
 
+  
+
+  .resume img {
+    width: 100%;
+    height: auto;
   }
 
    
