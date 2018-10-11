@@ -77,6 +77,7 @@ body {
     color: rgb(235, 217, 217);
     margin: 0;
     margin-top: 0.2em;
+    padding-bottom: 0.3em;
 
     /* text-align: center; */
     /* margin-left: 0.7em; */
@@ -162,6 +163,53 @@ body {
   padding-right: 1em;
 }
 
+.resume img {
+  box-shadow: 2px 5px 10px #000;
+}
+
+.modalCourseWork button {
+  background-color: rgb(208, 162, 247);
+  color: black;
+  border: none;
+  border-radius: 0;
+  border-radius: 10px 10px 0px 0;
+  text-shadow: 1px 0px 2px #fff;
+}
+
+.modalCourseWork button:hover {
+  background-color: rgb(230, 177, 247);
+  color: black;
+}
+
+/* modal body */
+
+.modal-header {
+  background-color: rgba(134, 115, 151, 0.5);
+  text-shadow: 0px 1px 0px #fff;
+}
+
+.modal-body {
+  background-color: rgba(168, 165, 165, 0.5);
+}
+
+button.close {
+  background-color: rgba(134, 115, 151, 0.5);
+  outline: 0;
+}
+
+button.close:hover {
+  background-color: rgba(134, 115, 151, 0.5);
+  outline: 0;
+}
+
+.modal-body a {
+  color: black;
+  text-decoration: underline;
+}
+
+.modal-body a:hover {
+  color: black;
+}
 
 /* MOBILE  */
 
@@ -201,9 +249,7 @@ body {
 
   }
 
-    .transparentContainerCourseWork #intro {
-      
-    }
+   
 
     .flexContainer img {
       width: 5em;
