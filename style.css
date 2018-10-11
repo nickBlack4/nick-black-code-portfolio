@@ -77,6 +77,7 @@ body {
     color: rgb(235, 217, 217);
     margin: 0;
     margin-top: 0.2em;
+    padding-bottom: 0.3em;
 
     /* text-align: center; */
     /* margin-left: 0.7em; */
@@ -160,6 +161,10 @@ body {
   /* font-family: 'K2D', sans-serif; */
   font-size: 1.5em;
   padding-right: 1em;
+}
+
+.resume img {
+  box-shadow: 2px 5px 10px #000;
 }
 
 
