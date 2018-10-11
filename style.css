@@ -125,11 +125,20 @@ body {
 
   .navigation ul li {
     display: inline;
-    text-decoration: none;
+    list-style-type: none;
     font-size: 2em;
     color: white;
     text-shadow: 1px 2px 2px #000;
     margin-right: 1em;
+  }
+
+  .navigation ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navigation ul li a:hover {
+    color: rgb(250, 236, 176);
   }
 
 .avatarContainer {
