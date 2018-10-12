@@ -295,9 +295,6 @@ button.close:hover {
       height: 10em;
     }
 
-    .avatarContainer img {
-    }
-
     .flexContainer h1 {
       font-size: 3.5em;
       text-shadow: 2px 2px 5px rgb(19, 0, 12);
@@ -330,6 +327,30 @@ button.close:hover {
       /* font-family: 'K2D', sans-serif; */
       font-size: 1em;
       padding-right: 1em;
+    }
+
+    .modal-header {
+      display: inline;
+    }
+
+    .modal-title {
+      display: inline;
+    }
+
+    .modal-body {
+      width: 100%;
+    }
+
+    /* this is the modal exit button */
+    button.close {
+      background-color: rgb(187, 134, 187);
+      border: 3px solid black;
+      margin: 0;
+      height: 4em;
+      width: 5em;
+      border-radius: 0;
+      border-radius: 10px 10px 10px 10px;
+      /* margin-right: 1.5em; */
     }
 
     
