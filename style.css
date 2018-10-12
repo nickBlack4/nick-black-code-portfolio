@@ -224,6 +224,21 @@ button.close:hover {
   color: black;
 }
 
+
+/* slideshow */
+/* .mySlides {
+  width: 100%;
+} */
+
+.projectDescription {
+  flex-direction: column;
+}
+
+.slideShow img {
+  width: 100%;
+  height: 100%;
+}
+
 /* MOBILE  */
 
   @media only screen and (max-width: 600px) {
