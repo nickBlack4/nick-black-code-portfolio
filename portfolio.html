@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nick Black - Nashville, TN - Web Dev/Programmer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="flexContainer">
+
+        <div>
+            <h1>
+                Nick Black
+            </h1>
+        </div>
+        <div>
+            <a href="https://github.com/nickBlack4"><img src="images/github.png" alt="github"></a>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="resume.html">resume</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+        </ul>
+    </div>
+
+
+    <div class="containerForBorderRadius">
+
+        <div class="hero-image">
+            <div class="contentContainer">
+
+                <div class="transparentContainerCourseWork">
+                    
+
+                        <p class="projectDescription">
+                            <h2>Nadeen's Hermitage Haven</h2>
+                        </p>
+                        <p>
+                            This is a nice restaurant/bar in Nashville that has live music and incredible food.  The owners are good friends and so I jumped at the chance to make something for them.  This isn't the layout we went with, but it was a good learning experience for me!
+                        </p>
+                        <!-- slideshow -->
+                        <div class="slideShow">
+                            <img class="mySlides" src="images/portfolioWebsites/slideshow/n/nadeens.png" style="width:100%">
+                            <img class="mySlides" src="images/portfolioWebsites/nadeens/nadeens2.png" style="width:100%">
+                            <img class="mySlides" src="images/portfolioWebsites/nadeens/nadeensContact.png" style="width:100%">
+                        </div>
+
+                        <!-- script -->
+                        <script>
+                            let myIndex = 0;
+                            carousel();
+                            
+                            function carousel() {
+                                let i;
+                                let x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                   x[i].style.display = "none";  
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}    
+                                x[myIndex-1].style.display = "block";  
+                                setTimeout(carousel, 3000); // Change image every 3 seconds
+                            }
+                            </script>
+
+
+                    
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <footer>
+        
+    </footer> -->
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
