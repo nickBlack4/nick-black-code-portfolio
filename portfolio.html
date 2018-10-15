@@ -40,60 +40,107 @@
             <div class="contentContainer">
 
                 <div class="transparentContainerCourseWork">
-                    
 
-                        <p class="projectDescription">
-                            <h2>Nadeen's Hermitage Haven</h2>
-                        </p>
-                        <p>
-                            This is a nice restaurant/bar in Nashville that has live music and incredible food.  The owners are good friends and so I jumped at the chance to make something for them.  This isn't the layout we went with, but it was a good learning experience for me!
-                        </p>
-                        <!-- slideshow -->
-                        <div class="slideShow">
-                            <img class="mySlides" src="images/portfolioWebsites/slideshow/n/nadeens.png" style="width:100%">
-                            <img class="mySlides" src="images/portfolioWebsites/nadeens/nadeens2.png" style="width:100%">
-                            <img class="mySlides" src="images/portfolioWebsites/nadeens/nadeensContact.png" style="width:100%">
-                        </div>
 
-                        <!-- script -->
-                        <script>
-                            let myIndex = 0;
-                            carousel();
-                            
-                            function carousel() {
-                                let i;
-                                let x = document.getElementsByClassName("mySlides");
-                                for (i = 0; i < x.length; i++) {
-                                   x[i].style.display = "none";  
-                                }
-                                myIndex++;
-                                if (myIndex > x.length) {myIndex = 1}    
-                                x[myIndex-1].style.display = "block";  
-                                setTimeout(carousel, 3000); // Change image every 3 seconds
+                    <p class="projectDescription">
+                        <h2>Nadeen's Hermitage Haven</h2>
+                    </p>
+                    <p>
+                        This is a nice restaurant/bar in Nashville that has live music and incredible food. The owners
+                        are good friends and so I jumped at the chance to make something for them. This isn't the
+                        layout we went with, but it was a good learning experience for me!
+                    </p>
+                    <!-- slideshow -->
+                    <div class="slideShow">
+                        <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeens.png">
+                        <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeens2.png">
+                        <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeensContact.png">
+
+                    </div>
+
+                    <!-- buttons that target mySlides class to change pictures -->
+                    <div>
+                        <!-- function takes argument n and mySlidesN which fits class name of img -->
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides')">&#10094;</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides')">&#10095;</button>
+                    </div>
+
+                    <p class="projectDescription">
+                        <h2>Nickblackguitar.com</h2>
+
+                    </p>
+                    <p>
+                        This website is live, and is my personal website for my music. It filled the need of being able
+                        to represent my album with a digtal media player and advertise gigs.
+                    </p>
+                    <!-- slideshow -->
+                    <div class="slideShow">
+                        <img class="mySlides2" src="images/portfolioWebsites/slideShow/nickblackguitarWebsite.png">
+                        <img class="mySlides2" src="images/portfolioWebsites/slideShow/nickblackguitarMobile.png">
+                    </div>
+                    <!-- buttons that target mySlides2 -->
+                    <div>
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides2')">&#10094;</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides2')">&#10095;</button>
+                    </div>
+
+                    <p class="projectDescription">
+                        <h2>Honky Tonkify</h2>
+
+                    </p>
+                    <p>
+                        This was my midstone project at Nashville Software School. It was built out using React JS and
+                        json-server for the data pulled. There is a random lyric generator I built in that will allow
+                        you to randomly generate lyrics based on a simplistic model of a sentence. It fits them
+                        together in a way that while linguistically makes sense--doesn't quite semantically. This was
+                        part of the fun as I realized what a complicated problem this was, but also how humorous it was
+                        to have the computer trying to formulate meaningful sentences.
+                    </p>
+
+
+                    <div class="slideShow">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/1.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/2.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/3.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/4.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/5.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/6.png">
+                        <img class="mySlides3" src="images/portfolioWebsites/slideShow/7.png">
+                    </div>
+                    <!-- buttons that target mySides3 -->
+                    <div>
+                        <button class="slideButton" onclick="plusDivs(-1, mySlides3)">&#10094;</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides3')">&#10095;</button>
+                    </div>
+
+
+                    <script>
+                        // funtion takes arguments slideIndex and mySlidesN that matches className for img class on slide
+                        var slideIndex = 1;
+                        showDivs(slideIndex, mySlidesN);
+
+                        function plusDivs(n, mySlidesN) {
+                            showDivs(slideIndex += n, mySlidesN);
+                        }
+
+                        function showDivs(n, mySlidesN) {
+                            var i;
+                            var x = document.getElementsByClassName(mySlidesN);
+                            if (n > x.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = x.length }
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
                             }
-                            </script>
-
-
-                    
+                            x[slideIndex - 1].style.display = "block";
+                        }
+                    </script>
 
                 </div>
 
             </div>
         </div>
 
-        <!-- <footer>
-        
-    </footer> -->
-
-
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
 </body>
 
