@@ -61,8 +61,8 @@
                     <!-- buttons that target mySlides class to change pictures -->
                     <div>
                         <!-- function takes argument n and mySlidesN which fits class name of img -->
-                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides')">&#10094;</button>
-                        <button class="slideButton" onclick="plusDivs(1, 'mySlides')">&#10095;</button>
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides')">Prev</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides')">Next</button>
                     </div>
 
                     <p class="projectDescription">
@@ -80,8 +80,8 @@
                     </div>
                     <!-- buttons that target mySlides2 -->
                     <div>
-                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides2')">&#10094;</button>
-                        <button class="slideButton" onclick="plusDivs(1, 'mySlides2')">&#10095;</button>
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides2')">Prev</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides2')">Next</button>
                     </div>
 
                     <p class="projectDescription">
@@ -109,15 +109,18 @@
                     </div>
                     <!-- buttons that target mySides3 -->
                     <div>
-                        <button class="slideButton" onclick="plusDivs(-1, mySlides3)">&#10094;</button>
-                        <button class="slideButton" onclick="plusDivs(1, 'mySlides3')">&#10095;</button>
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides3')">Prev</button>
+                        <button class="slideButton" onclick="plusDivs(1, 'mySlides3')">Next</button>
                     </div>
 
 
                     <script>
-                        // funtion takes arguments slideIndex and mySlidesN that matches className for img class on slide
                         var slideIndex = 1;
+                        let mySlidesN = "mySlides";
+                        // needed to call each one separately to get initial setup to be correct with pictures hidden except first slide
                         showDivs(slideIndex, mySlidesN);
+                        showDivs(slideIndex, "mySlides2");
+                        showDivs(slideIndex, "mySlides3");
 
                         function plusDivs(n, mySlidesN) {
                             showDivs(slideIndex += n, mySlidesN);
