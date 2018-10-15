@@ -104,9 +104,23 @@ body {
     100% {transform: rotateY(360deg);}
   }
 
-  /* .flexContainer img:hover {
-    transform: rotateY(165deg);
-  } */
+  .flexContainer img:hover {
+    animation-name: image-rotate-hover;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    /* animation with same speed from start to end */
+    animation-timing-function: linear;
+    background-color: black;
+    border-radius: 50px;
+  }
+
+  @keyframes image-rotate-hover {
+    0% {transform: rotateY(25deg);}
+    25% {transform: rotateY(100deg);}
+    50%  {transform: rotateY(200deg);}
+    75%  {transform: rotateY(225deg);}
+    100% {transform: rotateY(360deg);}
+  }
 
   .transparentContainerCourseWork {
     /* this is the color giving off pink hue */
