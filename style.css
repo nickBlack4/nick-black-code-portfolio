@@ -401,6 +401,14 @@ button.close:hover {
       /* margin-right: 1.5em; */
     }
 
+    /* buttons for slideShow */
+  .slideButton {
+    
+    width: 49%;
+    font-size: 0.7em;
+
+  }
+
     
   
     
