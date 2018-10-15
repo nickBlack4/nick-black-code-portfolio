@@ -109,15 +109,17 @@
                     </div>
                     <!-- buttons that target mySides3 -->
                     <div>
-                        <button class="slideButton" onclick="plusDivs(-1, mySlides3)">&#10094;</button>
+                        <button class="slideButton" onclick="plusDivs(-1, 'mySlides3')">&#10094;</button>
                         <button class="slideButton" onclick="plusDivs(1, 'mySlides3')">&#10095;</button>
                     </div>
 
 
                     <script>
-                        // funtion takes arguments slideIndex and mySlidesN that matches className for img class on slide
                         var slideIndex = 1;
+                        let mySlidesN = "mySlides";
                         showDivs(slideIndex, mySlidesN);
+                        showDivs(slideIndex, "mySlides2");
+                        showDivs(slideIndex, "mySlides3");
 
                         function plusDivs(n, mySlidesN) {
                             showDivs(slideIndex += n, mySlidesN);
