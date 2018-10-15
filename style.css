@@ -12,7 +12,7 @@ body {
 }
     /* this will also make the background responsive */
     .hero-image {
-        background-image: url("./images/background.jpg");
+        /* background-image: url("./images/background.jpg"); */
         background-color: #000;
         /* background-position: center top; */
         background-position: 0% 15%;
