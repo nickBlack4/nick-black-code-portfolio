@@ -1,252 +1,268 @@
 /* about me font */
-@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url("https://fonts.googleapis.com/css?family=K2D");
 
 * {
-  font-family: 'K2D', sans-serif;
+	font-family: "K2D", sans-serif;
 }
 
 body {
-    margin: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgba(56, 54, 56, 0.9);
+	margin: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgba(56, 54, 56, 0.9);
 }
-    /* this will also make the background responsive */
-    .hero-image {
-        /* background-image: url("./images/background.jpg"); */
-        background-color: #000;
-        /* background-position: center top; */
-        background-position: 0% 15%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-      }
+/* this will also make the background responsive */
+.hero-image {
+	/* background-image: url("./images/background.jpg"); */
+	background-color: #000;
+	/* background-position: center top; */
+	background-position: 0% 15%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
-  div.contentContainer {
-    background: rgba(235, 156, 156, 0.3);
-    /* width: 100%; */
-    padding: 1em;
-    /* adjusting this will adjust height of background image */
-    height: 100%;
-  }
+div.contentContainer {
+	background: rgba(235, 156, 156, 0.3);
+	/* width: 100%; */
+	padding: 1em;
+	/* adjusting this will adjust height of background image */
+	height: 100%;
+}
 
-  footer {
-    background: rgba(161, 138, 138, 0.8);
-    padding: 0.7em;
-    /* text-shadow: 1px 1px #fff; */
-  }
+footer {
+	background: rgba(161, 138, 138, 0.8);
+	padding: 0.7em;
+	/* text-shadow: 1px 1px #fff; */
+}
 
-  div.containerForBorderRadius {
-    border-radius: 0 0 10px 10px;
-    /* border: 1em solid black; */
-    border-right: 1em solid black;
-    border-left: 1em solid black;
-    border-bottom: 1em solid black;
-    
-  }
+div.containerForBorderRadius {
+	border-radius: 0 0 10px 10px;
+	/* border: 1em solid black; */
+	border-right: 1em solid black;
+	border-left: 1em solid black;
+	border-bottom: 1em solid black;
+}
 
-    /* flex container for header */
-  .flexContainer {
-    border-top: 0.7em solid black;
-    border-right: 1em solid black;
-    border-left: 1em solid black;
-    border-bottom: 0.38em solid black;
-    display: flex;
-    /* background: rgba(10, 9, 9, 0.5); */
-    background-color: black;
-    background-image: url("./images/paisely.png");
-    /* background-position: center top; */
-    /* background-position: 0% 15%; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+/* flex container for header */
+.flexContainer {
+	border-top: 0.7em solid black;
+	border-right: 1em solid black;
+	border-left: 1em solid black;
+	border-bottom: 0.38em solid black;
+	display: flex;
+	/* background: rgba(10, 9, 9, 0.5); */
+	background-color: black;
+	background-image: url("./images/paisely.png");
+	/* background-position: center top; */
+	/* background-position: 0% 15%; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 
-    /* fatten up header */
-    /* padding: 2.5em; */
-    border-radius: 10px 10px 0px 0;
-    flex-direction: row;
-    justify-content: center;
-  }
+	/* fatten up header */
+	/* padding: 2.5em; */
+	border-radius: 10px 10px 0px 0;
+	flex-direction: row;
+	justify-content: center;
+}
 
-  /* bootstrap is interfering with the heading on resume page because its cdn--can't figure it out */
+/* bootstrap is interfering with the heading on resume page because its cdn--can't figure it out */
 
-  .flexContainer h1 {
-    font-size: 6.7em;
-    text-shadow: 2px 2px 5px rgb(19, 0, 12);
-    color: rgb(235, 217, 217);
-    margin: 0;
-    margin-top: 0.2em;
-    padding-bottom: 0.3em;
-  }
+.flexContainer h1 {
+	font-size: 6.7em;
+	text-shadow: 2px 2px 5px rgb(19, 0, 12);
+	color: rgb(235, 217, 217);
+	margin: 0;
+	margin-top: 0.2em;
+	padding-bottom: 0.3em;
+}
 
-  .flexContainer img {
-    width: 7em;
-    height: 7em;
-    margin-top: 3em;
-    margin-left: 2.3em;
-    transition: transform 2s;
-    margin-bottom: 2em;
+.flexContainer img {
+	width: 7em;
+	height: 7em;
+	margin-top: 3em;
+	margin-left: 2.3em;
+	transition: transform 2s;
+	margin-bottom: 2em;
 
-    /* testing animation */
-    animation-name: image-rotate;
-    animation-duration: 18s;
-    /* animation-delay: 2s; */
-    animation-iteration-count: infinite;
-    /* animation with same speed from start to end */
-    animation-timing-function: linear;
-     
-  }
+	/* testing animation */
+	animation-name: image-rotate;
+	animation-duration: 18s;
+	/* animation-delay: 2s; */
+	animation-iteration-count: infinite;
+	/* animation with same speed from start to end */
+	animation-timing-function: linear;
+}
 
-  @keyframes image-rotate {
-    0% {transform: rotateY(25deg);}
-    25% {transform: rotateY(100deg);}
-    50%  {transform: rotateY(225deg);}
-    75%  {transform: rotateY(300deg);}
-    100% {transform: rotateY(360deg);}
-  }
+@keyframes image-rotate {
+	0% {
+		transform: rotateY(25deg);
+	}
+	25% {
+		transform: rotateY(100deg);
+	}
+	50% {
+		transform: rotateY(225deg);
+	}
+	75% {
+		transform: rotateY(300deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
 
-  .flexContainer img:hover {
-    animation-name: image-rotate-hover;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-    /* animation with same speed from start to end */
-    animation-timing-function: linear;
-    background-color: black;
-    border-radius: 50px;
-  }
+.flexContainer img:hover {
+	animation-name: image-rotate-hover;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+	/* animation with same speed from start to end */
+	animation-timing-function: linear;
+	background-color: black;
+	border-radius: 50px;
+}
 
-  @keyframes image-rotate-hover {
-    0% {transform: rotateY(25deg);}
-    25% {transform: rotateY(100deg);}
-    50%  {transform: rotateY(200deg);}
-    75%  {transform: rotateY(225deg);}
-    100% {transform: rotateY(360deg);}
-  }
+@keyframes image-rotate-hover {
+	0% {
+		transform: rotateY(25deg);
+	}
+	25% {
+		transform: rotateY(100deg);
+	}
+	50% {
+		transform: rotateY(200deg);
+	}
+	75% {
+		transform: rotateY(225deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
 
-  .transparentContainerCourseWork {
-    /* this is the color giving off pink hue */
-    background: rgba(164, 162, 165, 0.9);
-    padding: 2em;
-    border-radius: 1em;
-    border: 1px solid rgb(63, 4, 112);
-    box-shadow: 5px 10px 3px black;
-  }
+.transparentContainerCourseWork {
+	/* this is the color giving off pink hue */
+	background: rgba(164, 162, 165, 0.9);
+	padding: 2em;
+	border-radius: 1em;
+	border: 1px solid rgb(63, 4, 112);
+	box-shadow: 5px 10px 3px black;
+}
 
-  /* targets children divs */
-  .transparentContainerCourseWork > div {
-    /* background-color: red; */
-    /* text-align: center; */
-    display: flex;
+/* targets children divs */
+.transparentContainerCourseWork > div {
+	/* background-color: red; */
+	/* text-align: center; */
+	display: flex;
+}
 
-  }
+.navigation a {
+	padding: 0;
+	margin: 0;
+}
 
-  .navigation a {
-    padding: 0;
-    margin: 0;
-  }
+.navigation {
+	background: rgba(51, 3, 47, 0.5);
+	border-left: 1em solid black;
+	border-right: 1em solid black;
+	margin: 0;
+	padding: 0.1em;
+	border-bottom: 1px solid black;
+}
 
-  .navigation {
-    background: rgba(51, 3, 47, 0.5);
-    border-left: 1em solid black;
-    border-right: 1em solid black;
-    margin: 0;
-    padding: 0.1em;
-    border-bottom: 1px solid black;
-  }
+.navigation ul {
+	margin: 0;
+}
 
-  .navigation ul {
-    margin: 0;
-  }
+.navigation ul li {
+	display: inline;
+	list-style-type: none;
+	font-size: 2em;
+	color: white;
+	text-shadow: 1px 2px 2px #000;
+	margin-right: 1em;
+}
 
-  .navigation ul li {
-    display: inline;
-    list-style-type: none;
-    font-size: 2em;
-    color: white;
-    text-shadow: 1px 2px 2px #000;
-    margin-right: 1em;
-  }
-  
-  .navigation ul li a {
-    color: white;
-    text-decoration: none;
-  }
+.navigation ul li a {
+	color: white;
+	text-decoration: none;
+}
 
-  .navigation ul li a:hover {
-    color: rgb(250, 236, 176);
-  }
+.navigation ul li a:hover {
+	color: rgb(250, 236, 176);
+}
 
 .avatarContainer {
-  background-color: rgb(38, 38, 38);
-  padding: 1em;
-  width: 50%;
-  border-radius: 1em;
-  border: 2px solid black;
-  text-align: center;
+	background-color: rgb(38, 38, 38);
+	padding: 1em;
+	width: 50%;
+	border-radius: 1em;
+	border: 2px solid black;
+	text-align: center;
 }
 
 .avatarContainer img {
-  width: 25em;
-  height: 25em;
+	width: 25em;
+	height: 25em;
 }
 
 #intro {
-  /* already specified in universal tag */
-  /* font-family: 'K2D', sans-serif; */
-  font-size: 1.5em;
-  padding-right: 1em;
+	/* already specified in universal tag */
+	/* font-family: 'K2D', sans-serif; */
+	font-size: 1.5em;
+	padding-right: 1em;
 }
 
 .resume img {
-  box-shadow: 2px 5px 10px #000;
-  width: 100%;
-  height: 100%;
+	box-shadow: 2px 5px 10px #000;
+	width: 100%;
+	height: 100%;
 }
 
 .modalCourseWork button {
-  /* background-color: rgb(208, 162, 247); */
-  background-color: orange;
-  color: black;
-  border: none;
-  border-radius: 0;
-  border-radius: 10px 10px 0px 0;
-  text-shadow: 1px 0px 2px #fff;
+	/* background-color: rgb(208, 162, 247); */
+	background-color: orange;
+	color: black;
+	border: none;
+	border-radius: 0;
+	border-radius: 10px 10px 0px 0;
+	text-shadow: 1px 0px 2px #fff;
 }
 
 .modalCourseWork button:hover {
-  background-color: rgb(230, 177, 247);
-  color: black;
+	background-color: rgb(230, 177, 247);
+	color: black;
 }
 
 /* modal body */
 
 .modal-header {
-  background-color: rgba(134, 115, 151, 0.5);
-  text-shadow: 0px 1px 0px #fff;
+	background-color: rgba(134, 115, 151, 0.5);
+	text-shadow: 0px 1px 0px #fff;
 }
 
 .modal-body {
-  background-color: rgba(168, 165, 165, 0.5);
+	background-color: rgba(168, 165, 165, 0.5);
 }
 
 button.close {
-  background-color: rgba(134, 115, 151, 0.5);
-  outline: 0;
+	background-color: rgba(134, 115, 151, 0.5);
+	outline: 0;
 }
 
 button.close:hover {
-  background-color: rgba(134, 115, 151, 0.5);
-  outline: 0;
+	background-color: rgba(134, 115, 151, 0.5);
+	outline: 0;
 }
 
 .modal-body a {
-  color: black;
-  text-decoration: underline;
+	color: black;
+	text-decoration: underline;
 }
 
 .modal-body a:hover {
-  color: black;
+	color: black;
 }
-
 
 /* slideshow */
 /* .mySlides {
@@ -254,187 +270,173 @@ button.close:hover {
 } */
 
 .projectDescription {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .slideShow img {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 /* buttons for slideShow */
 .slideButton {
-  width: 50%;
-  height: 3em;
-  /* box-shadow: 0px 2px 10px #000; */
-  background: rgba(51, 3, 47, 0.5);
-  border: none;
-  border-radius: 0 0 10px 10px;
-  border-bottom: 1px solid black;
-  /* box shadow only on bottom */
-  box-shadow: 0 4px 10px -2px rgb(37, 35, 35);
-  font-size: 1.2em;
-  padding: 0;
-  margin: 0;
-  text-shadow: 1px 1px rgb(167, 164, 164);
+	width: 50%;
+	height: 3em;
+	/* box-shadow: 0px 2px 10px #000; */
+	background: rgba(51, 3, 47, 0.5);
+	border: none;
+	border-radius: 0 0 10px 10px;
+	border-bottom: 1px solid black;
+	/* box shadow only on bottom */
+	box-shadow: 0 4px 10px -2px rgb(37, 35, 35);
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	text-shadow: 1px 1px rgb(167, 164, 164);
 }
 
 .slideButton:hover {
-  background: rgba(110, 25, 103, 0.5);
+	background: rgba(110, 25, 103, 0.5);
 }
 
 .slideButton:focus {
-  outline: 0;
+	outline: 0;
 }
 
 /* MOBILE  */
 
-  @media only screen and (max-width: 600px) {
-    body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    /* resume */
-    .navigation ul li {
-      display: inline;
-      list-style-type: none;
-      font-size: 1.3em;
-      color: white;
-      text-shadow: 1px 2px 2px #000;
-      margin-right: 1em;
-    }
+@media only screen and (max-width: 600px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 
-    /* button above resume for relevant coursework */
-    .modalCourseWork button {
-      background-color: rgb(208, 162, 247);
-      color: black;
-      border: none;
-      border-radius: 0;
-      border-radius: 10px 10px 0px 0;
-      text-shadow: 1px 0px 2px #fff;
-      width: 100%;
-      font-size: 0.8em;
-    }
-   
+	/* resume */
+	.navigation ul li {
+		display: inline;
+		list-style-type: none;
+		font-size: 1.3em;
+		color: white;
+		text-shadow: 1px 2px 2px #000;
+		margin-right: 1em;
+	}
 
-    .hero-image {
-        /* background-image: url("./images/background.jpg"); */
-        background-color: #000;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+	/* button above resume for relevant coursework */
+	.modalCourseWork button {
+		background-color: rgb(208, 162, 247);
+		color: black;
+		border: none;
+		border-radius: 0;
+		border-radius: 10px 10px 0px 0;
+		text-shadow: 1px 0px 2px #fff;
+		width: 100%;
+		font-size: 0.8em;
+	}
 
-    /* footer {
+	.hero-image {
+		/* background-image: url("./images/background.jpg"); */
+		background-color: #000;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+
+	/* footer {
         background: rgba(161, 138, 138, 0.8);
         padding: 0.4em;
         text-shadow: 1px 1px #fff;
     } */
-  
-     /* targets children divs */
-  .transparentContainerCourseWork > div {
-    /* background-color: red; */
-    /* text-align: center; */
-    display: block;
-  }
 
-  
+	/* targets children divs */
+	.transparentContainerCourseWork > div {
+		/* background-color: red; */
+		/* text-align: center; */
+		display: block;
+	}
 
-  .resume img {
-    width: 100%;
-    height: auto;
-  }
+	.resume img {
+		width: 100%;
+		height: auto;
+	}
 
-   
+	.flexContainer img {
+		width: 5em;
+		height: 5em;
+		margin-top: 3em;
+		margin-right: 2em;
+		/* margin-left: 2.3em; */
+		transition: transform 2s;
+		/* margin-bottom: 2em; */
+		/* margin-left: -.5em; */
+	}
 
-    .flexContainer img {
-      width: 5em;
-      height: 5em;
-      margin-top: 3em;
-      margin-right: 2em; 
-      /* margin-left: 2.3em; */
-      transition: transform 2s;
-      /* margin-bottom: 2em; */
-      /* margin-left: -.5em; */
-       
-    }
+	.avatarContainer {
+		height: 10em;
+	}
 
-    .avatarContainer {
-      height: 10em;
-    }
+	.flexContainer h1 {
+		font-size: 3.5em;
+		text-shadow: 2px 2px 5px rgb(19, 0, 12);
+		color: rgb(235, 217, 217);
+		margin: 0;
+		margin-top: 0.1em;
+		margin-left: 1em;
 
-    .flexContainer h1 {
-      font-size: 3.5em;
-      text-shadow: 2px 2px 5px rgb(19, 0, 12);
-      color: rgb(235, 217, 217);
-      margin: 0;
-      margin-top: 0.1em;
-      margin-left: 1em;
-  
-      /* text-align: center; */
-      /* margin-left: 0.7em; */
-      /* transition: text-shadow 1.5s; */
-    }
+		/* text-align: center; */
+		/* margin-left: 0.7em; */
+		/* transition: text-shadow 1.5s; */
+	}
 
-    .avatarContainer {
-      background-color: rgb(38, 38, 38);
-      padding: 1em;
-      width: 50%;
-      border-radius: 1em;
-      border: 2px solid black;
-      text-align: center;
-    }
-    
-    .avatarContainer img {
-      width: 8em;
-      height: 8em;
-    }
-    
-    #intro {
-      /* already specified in universal tag */
-      /* font-family: 'K2D', sans-serif; */
-      font-size: 1em;
-      padding-right: 1em;
-    }
+	.avatarContainer {
+		background-color: rgb(38, 38, 38);
+		padding: 1em;
+		width: 50%;
+		border-radius: 1em;
+		border: 2px solid black;
+		text-align: center;
+	}
 
-    .modal-header {
-      display: inline;
-    }
+	.avatarContainer img {
+		width: 8em;
+		height: 8em;
+	}
 
-    .modal-title {
-      display: inline;
-    }
+	#intro {
+		/* already specified in universal tag */
+		/* font-family: 'K2D', sans-serif; */
+		font-size: 1em;
+		padding-right: 1em;
+	}
 
-    .modal-body {
-      width: 100%;
-    }
+	.modal-header {
+		display: inline;
+	}
 
-    /* this is the modal exit button */
-    button.close {
-      background-color: rgb(187, 134, 187);
-      border: 3px solid black;
-      margin: 0;
-      height: 4em;
-      width: 5em;
-      border-radius: 0;
-      border-radius: 10px 10px 10px 10px;
-      /* margin-right: 1.5em; */
-    }
+	.modal-title {
+		display: inline;
+	}
 
-    /* buttons for slideShow */
-  .slideButton {
-    
-    width: 49%;
-    font-size: 0.7em;
+	.modal-body {
+		width: 100%;
+	}
 
-  }
+	/* this is the modal exit button */
+	button.close {
+		background-color: rgb(187, 134, 187);
+		border: 3px solid black;
+		margin: 0;
+		height: 4em;
+		width: 5em;
+		border-radius: 0;
+		border-radius: 10px 10px 10px 10px;
+		/* margin-right: 1.5em; */
+	}
 
-    
-  
-    
-    
-
+	/* buttons for slideShow */
+	.slideButton {
+		width: 49%;
+		font-size: 0.7em;
+	}
 }
