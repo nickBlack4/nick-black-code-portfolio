@@ -303,6 +303,13 @@ button.close:hover {
 	outline: 0;
 }
 
+.books .hasRead {
+	text-decoration: line-through;
+}
+
+
+
+
 /* MOBILE  */
 
 @media only screen and (max-width: 600px) {
