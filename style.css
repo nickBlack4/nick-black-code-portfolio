@@ -218,6 +218,14 @@ article {
 	width: 75%;
 }
 
+#nick-image img {
+	margin-top: 5px;
+	width: 60%;
+	height: 60%;
+	box-shadow: 0px 0px 5px #000;
+	border: 2px solid black;
+}
+
 /* Header breaks here */
 @media only screen and (max-width: 680px) {
 	.flexContainer h1 {
