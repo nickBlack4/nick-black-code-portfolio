@@ -10,19 +10,14 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	background: rgba(56, 54, 56, 0.9);
 }
-/* this will also make the background responsive */
-.hero-image {
-	/* background-image: url("./images/background.jpg"); */
-	background-color: #000;
-	/* background-position: center top; */
-	background-position: 0% 15%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+
+.main-container {
+	width: 60%;
+	margin: 0 auto;
 }
 
 div.contentContainer {
-	background: rgba(235, 156, 156, 0.3);
+	background: rgb(197, 196, 195);
 	/* width: 100%; */
 	padding: 1em;
 	/* adjusting this will adjust height of background image */
@@ -140,28 +135,12 @@ div.containerForBorderRadius {
 	}
 }
 
-.transparentContainerCourseWork {
-	/* this is the color giving off pink hue */
-	background: rgba(164, 162, 165, 0.9);
-	padding: 2em;
-	border-radius: 1em;
-	border: 1px solid rgb(63, 4, 112);
-	box-shadow: 5px 10px 3px black;
-}
-
-/* targets children divs */
-.transparentContainerCourseWork > div {
-	/* background-color: red; */
-	/* text-align: center; */
-	display: flex;
-}
-
-.navigation a {
+nav a {
 	padding: 0;
 	margin: 0;
 }
 
-.navigation {
+nav {
 	background: rgba(51, 3, 47, 0.5);
 	border-left: 1em solid black;
 	border-right: 1em solid black;
@@ -170,11 +149,11 @@ div.containerForBorderRadius {
 	border-bottom: 1px solid black;
 }
 
-.navigation ul {
+nav ul {
 	margin: 0;
 }
 
-.navigation ul li {
+nav ul li {
 	display: inline;
 	list-style-type: none;
 	font-size: 2em;
@@ -183,91 +162,14 @@ div.containerForBorderRadius {
 	margin-right: 1em;
 }
 
-.navigation ul li a {
+nav ul li a {
 	color: white;
 	text-decoration: none;
 }
 
-.navigation ul li a:hover {
+nav ul li a:hover {
 	color: rgb(250, 236, 176);
 }
-
-.avatarContainer {
-	background-color: rgb(38, 38, 38);
-	padding: 1em;
-	width: 50%;
-	border-radius: 1em;
-	border: 2px solid black;
-	text-align: center;
-}
-
-.avatarContainer img {
-	width: 25em;
-	height: 25em;
-}
-
-#intro {
-	/* already specified in universal tag */
-	/* font-family: 'K2D', sans-serif; */
-	font-size: 1.5em;
-	padding-right: 1em;
-}
-
-.resume img {
-	box-shadow: 2px 5px 10px #000;
-	width: 100%;
-	height: 100%;
-}
-
-.modalCourseWork button {
-	/* background-color: rgb(208, 162, 247); */
-	background-color: orange;
-	color: black;
-	border: none;
-	border-radius: 0;
-	border-radius: 10px 10px 0px 0;
-	text-shadow: 1px 0px 2px #fff;
-}
-
-.modalCourseWork button:hover {
-	background-color: rgb(230, 177, 247);
-	color: black;
-}
-
-/* modal body */
-
-.modal-header {
-	background-color: rgba(134, 115, 151, 0.5);
-	text-shadow: 0px 1px 0px #fff;
-}
-
-.modal-body {
-	background-color: rgba(168, 165, 165, 0.5);
-}
-
-button.close {
-	background-color: rgba(134, 115, 151, 0.5);
-	outline: 0;
-}
-
-button.close:hover {
-	background-color: rgba(134, 115, 151, 0.5);
-	outline: 0;
-}
-
-.modal-body a {
-	color: black;
-	text-decoration: underline;
-}
-
-.modal-body a:hover {
-	color: black;
-}
-
-/* slideshow */
-/* .mySlides {
-  width: 100%;
-} */
 
 .projectDescription {
 	flex-direction: column;
@@ -307,10 +209,92 @@ button.close:hover {
 	text-decoration: line-through;
 }
 
+/* iPad pro */
+@media only screen and (max-width: 1024px) {
+	.flexContainer img {
+		visibility: hidden;
+	}
+
+	.main-container {
+		width: 90%;
+	}
+
+	#intro {
+		font-size: 1.5em;
+	}
+
+	.flexContainer h1 {
+		font-size: 5em;
+	}
+
+	/* buttons for slideShow */
+	.slideButton {
+		width: 46%;
+		font-size: 0.7em;
+	}
+
+	.slideShow img {
+		width: 93%;
+	}
+
+	.flexContainer a {
+		visibility: hidden;
+	}
+}
 
 
+/* iPad */
+@media only screen and (max-width: 768px) {
+	.flexContainer img {
+		visibility: hidden;
+	}
 
-/* MOBILE  */
+	.main-container {
+		width: 90%;
+	}
+
+	#intro {
+		font-size: 1.1em;
+	}
+
+	.flexContainer h1 {
+		font-size: 5em;
+	}
+
+	/* buttons for slideShow */
+	.slideButton {
+		width: 46%;
+		font-size: 0.7em;
+	}
+
+	.slideShow img {
+		width: 93%;
+	}
+
+	.flexContainer a {
+		visibility: hidden;
+	}
+}
+
+/* MOBILE PHONES */
+@media only screen and (max-width: 415px) {	
+	.flexContainer img {
+		visibility: hidden;
+	}
+
+	.main-container {
+		width: 100%;
+	}
+
+	.slideButton {
+		width: 35%;
+		font-size: 0.7em;
+	}
+
+	.slideShow img {
+		width: 100%;
+	}
+}
 
 @media only screen and (max-width: 600px) {
 	body {
@@ -320,7 +304,7 @@ button.close:hover {
 	}
 
 	/* resume */
-	.navigation ul li {
+	nav ul li {
 		display: inline;
 		list-style-type: none;
 		font-size: 1.3em;
@@ -329,58 +313,12 @@ button.close:hover {
 		margin-right: 1em;
 	}
 
-	/* button above resume for relevant coursework */
-	.modalCourseWork button {
-		background-color: rgb(208, 162, 247);
-		color: black;
-		border: none;
-		border-radius: 0;
-		border-radius: 10px 10px 0px 0;
-		text-shadow: 1px 0px 2px #fff;
-		width: 100%;
-		font-size: 0.8em;
-	}
-
-	.hero-image {
-		/* background-image: url("./images/background.jpg"); */
-		background-color: #000;
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
-
-	/* footer {
-        background: rgba(161, 138, 138, 0.8);
-        padding: 0.4em;
-        text-shadow: 1px 1px #fff;
-    } */
-
-	/* targets children divs */
-	.transparentContainerCourseWork > div {
-		/* background-color: red; */
-		/* text-align: center; */
-		display: block;
-	}
-
-	.resume img {
-		width: 100%;
-		height: auto;
-	}
-
 	.flexContainer img {
 		width: 5em;
 		height: 5em;
 		margin-top: 3em;
 		margin-right: 2em;
-		/* margin-left: 2.3em; */
 		transition: transform 2s;
-		/* margin-bottom: 2em; */
-		/* margin-left: -.5em; */
-	}
-
-	.avatarContainer {
-		height: 10em;
 	}
 
 	.flexContainer h1 {
@@ -390,55 +328,11 @@ button.close:hover {
 		margin: 0;
 		margin-top: 0.1em;
 		margin-left: 1em;
-
-		/* text-align: center; */
-		/* margin-left: 0.7em; */
-		/* transition: text-shadow 1.5s; */
-	}
-
-	.avatarContainer {
-		background-color: rgb(38, 38, 38);
-		padding: 1em;
-		width: 50%;
-		border-radius: 1em;
-		border: 2px solid black;
-		text-align: center;
-	}
-
-	.avatarContainer img {
-		width: 8em;
-		height: 8em;
 	}
 
 	#intro {
-		/* already specified in universal tag */
-		/* font-family: 'K2D', sans-serif; */
-		font-size: 1em;
+		font-size: 0.9em;
 		padding-right: 1em;
-	}
-
-	.modal-header {
-		display: inline;
-	}
-
-	.modal-title {
-		display: inline;
-	}
-
-	.modal-body {
-		width: 100%;
-	}
-
-	/* this is the modal exit button */
-	button.close {
-		background-color: rgb(187, 134, 187);
-		border: 3px solid black;
-		margin: 0;
-		height: 4em;
-		width: 5em;
-		border-radius: 0;
-		border-radius: 10px 10px 10px 10px;
-		/* margin-right: 1.5em; */
 	}
 
 	/* buttons for slideShow */
