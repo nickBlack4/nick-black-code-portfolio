@@ -7,7 +7,7 @@
 #timer {
   font-size: 1.5em;
   color: white;
-  text-shadow: 0 0 20px #8f07ff86;
+  text-shadow: 0 0 20px #6303b386;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@
 }
 
 #timer div span {
-  color: #b1cdf1;
+  color: #b8d6fd;
   display: block;
   font-size: 0.35em;
   text-align: center;
