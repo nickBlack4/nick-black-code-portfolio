@@ -1,0 +1,24 @@
+.timer-container {
+  font-family: sans-serif;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#timer {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 20px #8f07ff86;
+  text-align: center;
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 50px;
+}
+
+#timer div span {
+  color: #b1cdf1;
+  display: block;
+  font-size: 0.35em;
+  text-align: center;
+}

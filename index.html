@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Nick Black - Charlotte, NC - Software Engineer</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nick Black - Charlotte, NC - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./timer.css" />
+  </head>
 
-	<body>
+  <body>
+    <div class="main-container">
+      <header class="flexContainer">
+        <h1>Nick Black</h1>
+        <a href="https://github.com/nickBlack4"
+          ><img src="images/github.png" alt="github"
+        /></a>
+      </header>
 
-	<div class="main-container">
-	
-		<header class="flexContainer">
-				<h1>Nick Black</h1>
-				<a href="https://github.com/nickBlack4"><img src="images/github.png" alt="github"></a>
-		</header>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="resume.html">resume</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="todo.html">todo</a></li>
+          <li><a href="https://github.com/nickBlack4">github</a></li>
+          <li>
+            <a href="http://www.nickblackguitar.com" style="color: greenyellow;"
+              >music</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-		<nav>
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="resume.html">resume</a></li>
-				<li><a href="portfolio.html">portfolio</a></li>
-				<li><a href="todo.html">todo</a></li>
-				<li><a href="https://github.com/nickBlack4">github</a></li>
-				<li>
-					<a href="http://www.nickblackguitar.com" style="color: greenyellow;"
-						>music</a
-					>
-				</li>
-			</ul>
-		</nav>
+      <div class="containerForBorderRadius">
+        <div class="contentContainer">
+          <p id="intro">
+            My name is Nick Black.
 
-		<div class="containerForBorderRadius">
-				<div class="contentContainer">
-					
-					<p id="intro">
-						My name is Nick Black.
+            <br /><br />
 
-						<br /><br />
+            I am a developer and musician living in Charlotte, North Carolina. I
+            have a passion for Linux and the open source movement. I am
+            currently interested in
+            <em>Python, Javascript, React, and Node.</em>
 
-						I am a developer and musician living in Charlotte, North
-						Carolina. I have a passion for Linux and the open source
-						movement. I am currently interested in
-						<em>Python, Javascript, React, and Node.</em>
+            <br /><br />
 
-						<br /><br />
+            I like to write code as well as songs. I find the two similar in
+            that you are building off of preconceived ideas and using them to
+            solve a problem.
+          </p>
 
-						I like to write code as well as songs. I find the two similar in
-						that you are building off of preconceived ideas and using them
-						to solve a problem.
-					</p>
+          <p id="nick-image">
+            <img src="images/nick.jpg" />
+          </p>
+        </div>
+      </div>
 
-					<p id="nick-image">
-						<img src="images/nick.jpg">
-					</p>
+      <!-- main container -->
+    </div>
 
-				</div>
-		</div>
+    <footer>
+      <div class="timer-container">
+        <div class="countup" id="timer"></div>
+      </div>
+    </footer>
 
-	<!-- main container -->
-	</div>
-
-
-	</body>
+    <script src="./timer.js"></script>
+  </body>
 </html>
