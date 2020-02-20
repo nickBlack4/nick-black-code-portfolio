@@ -1,5 +1,5 @@
 /* about me font */
-@import url("https://fonts.googleapis.com/css?family=K2D");
+@import url('https://fonts.googleapis.com/css?family=K2D');
 
 body {
   margin: 1.5em;
@@ -34,7 +34,7 @@ div.containerForBorderRadius {
   border-bottom: 0.38em solid black;
   display: flex;
   background-color: black;
-  background-image: url("./images/paisely.png");
+  background-image: url('./images/paisely.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -50,7 +50,7 @@ div.containerForBorderRadius {
   margin: 0;
   margin-top: 0.2em;
   padding-bottom: 0.3em;
-  font-family: "K2D", sans-serif;
+  font-family: 'K2D', sans-serif;
 }
 
 .flexContainer img {
@@ -140,7 +140,7 @@ nav ul li {
   color: white;
   text-shadow: 1px 2px 2px #000;
   margin-right: 1em;
-  font-family: "K2D", sans-serif;
+  font-family: 'K2D', sans-serif;
 }
 
 nav ul li a:link {
@@ -215,11 +215,26 @@ article {
 }
 
 #nick-image img {
-  margin-top: 5px;
   width: 60%;
   height: 60%;
   box-shadow: 0px 0px 5px #000;
   border: 2px solid black;
+  padding: 1px;
+  display: block;
+  margin: auto auto;
+}
+
+/**********************
+  Github Chart
+***********************/
+.github-chart {
+  background-color: black;
+}
+
+.github-chart img {
+  width: 95%;
+  height: auto;
+  padding: 5px;
 }
 
 /*******************
