@@ -212,6 +212,7 @@ article {
   font-size: 0.9em;
   font-style: italic;
   width: 75%;
+  margin: auto;
 }
 
 #nick-image img {
@@ -221,7 +222,7 @@ article {
   border: 2px solid black;
   padding: 1px;
   display: block;
-  margin: auto auto;
+  margin: auto;
 }
 
 /**********************
