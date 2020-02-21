@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
 .timer-container {
-  font-family: sans-serif;
+  font-family: 'Trade Winds', sans-serif;
   width: 100%;
   margin-top: 10px;
 }
 
 #timer {
   font-size: 1.5em;
-  color: white;
-  text-shadow: 0 0 20px #6303b386;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -17,7 +19,7 @@
 }
 
 #timer div span {
-  color: #b8d6fd;
+  color: #000000;
   display: block;
   font-size: 0.35em;
   text-align: center;
